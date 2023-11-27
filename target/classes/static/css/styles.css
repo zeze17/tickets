@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #333;
+}
+
+.navbar li {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    font-family: 'Shadows Into Light', cursive; 
+    font-size: 27px; 
+}
+
+.navbar a:hover {
+    background-color: #007bff;
+}
+
+section {
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.cont1 {
+    margin: 20px auto; /* Ajusta el margen para centrar horizontalmente */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 50%; /* Reduciendo el ancho al 60% */
+    background-color: #f9f9f9;
+}
+
+/* Estilos para el contenedor interno */
+.cont_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra verticalmente el contenido */
+    text-align: center; /* Alinea el texto al centro si es necesario */
+}
+
+
+
+.tickets-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ticket-container {
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la información del ticket */
+.ticket-details {
+    margin-bottom: 10px;
+}
+
+.ticket-details p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Estilos para los enlaces de acción (Editar, Eliminar) */
+.ticket-actions a {
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.edit-link {
+    color: #FFA500; /* Color naranja para el enlace de editar */
+}
+
+.delete-link {
+    color: #FF0000; /* Color rojo para el enlace de eliminar */
+}
+
+h1 {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.cuerpo {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px; 
+    line-height: 1.6; 
+    font-size: 25px; 
+    color: #333; 
+}
+
+
+.jugadores-destacados {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.jugador {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.jugador img {
+    
+    width: 400px;
+  height: 250px;
+}
+
+.jugador p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+
+.page-title {
+    text-align: center;
+    -webkit-text-stroke: 1px white;
+    font-size: 50px;
+    color: rgb(0, 128, 255);
+    margin-top: 20px;
+    font-family: 'Permanent Marker', cursive;  
+}
+
+
+.title-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 15px; 
+    border-radius: 10px; 
+    margin-top: 15px;
+    color: white; 
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.Clubes-destacados {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.Club {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.Club img {
+    
+    width: 400px;
+  height: 250px;
+}
+
+.Club p {
+    margin-top: 10px;
+    text-align: justify;
+}

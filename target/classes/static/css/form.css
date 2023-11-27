@@ -1,0 +1,168 @@
+
+.return {
+    text-align: start; 
+    margin-top: 40px; 
+    margin-left: 40px;
+}
+
+.return a {
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.return a:hover {
+    background-color: #0056b3;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #333;
+}
+
+.navbar li {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    font-family: 'Shadows Into Light', cursive; 
+    font-size: 27px; 
+}
+
+.navbar a:hover {
+    background-color: #007bff;
+}
+
+body {
+    margin: 0;
+}
+
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    
+    
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.body1 {
+    background-image: url('https://th.bing.com/th/id/OIP.kzhsX6zZx-7UqwDJNs-WAwHaEo?w=1024&h=640&rs=1&pid=ImgDetMain');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+}
+.body2 {
+    background-image: url('https://static1.squarespace.com/static/5115ae35e4b04c436ed7f63b/t/58190a8d725e2564c2d88c3c/1478036124604/6+Blog+Changes+That+Tripled+My+Email+Opt-In+Rate+In+Less+Than+4+Weeks+(Twice)'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center; 
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+}
+.body3 {
+    background-image: url('https://www.shutterstock.com/shutterstock/videos/1035676589/thumb/5.jpg?ip=x480'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center; 
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+}
+.body4 {
+    background-image: url('https://2.bp.blogspot.com/-51anC3__lf0/T6kpQ6rJFqI/AAAAAAAADNM/siamRjuv42s/s1600/generico-futbol-enero-grande7.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
+    background-position: center; 
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+}
+.body5 {
+    background-image: url('https://3.bp.blogspot.com/-Tg4cM6YnfJI/UypDPrp_rwI/AAAAAAAAAEg/Z3s59Mul0rQ/s1600/Partido-800x432.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+}
+
+.scroll-box {
+			max-height: 200px;
+			overflow-y: scroll;
+			border: 1px solid #ccc;
+		}
+		
+		
+.cont {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white; 
+    margin-bottom: 40px;
+    
+}
+
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+	

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tickets</title>
+	<link rel="stylesheet" th:href="@{/css/styles.css}">
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Courgette&family=Kalam:wght@300&family=Permanent+Marker&family=Shadows+Into+Light&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Shadows+Into+Light&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Courgette&family=Kalam:wght@300&family=Permanent+Marker&family=Shadows+Into+Light&display=swap"
+		rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<!-- jQuery, Popper.js, Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar">
+			<ul>
+
+				<li><a th:href="@{/}">Cerrar Sesión</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="jugadores-destacados">
+
+		<div class="jumbotron mt-4 shadow">
+			<div id="carouselExample" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="https://www.uts.edu.co/sitio/wp-content/uploads/2019/10/banner-tec-informatica.jpg"
+							class="d-block w-100" alt="Imagen 1">
+					</div>
+
+					<div class="carousel-item">
+						<img src="https://www.uts.edu.co/sitio/wp-content/uploads/2019/10/banner-mejor.jpg"
+							class="d-block w-100" alt="Imagen 3">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Siguiente</span>
+				</a>
+			</div>
+
+			<h1>TICKETS</h1>
+			<div class="cont1">
+				<div class="cont_main">
+					<div class="container">
+						<div >
+							<!-- Iterar sobre la lista de tickets -->
+							<div th:each="ticket : ${ticket}">
+								<div th:if="${ticket.usuario != null}">
+									<p th:text="'Primer Nombre: ' + ${ticket.usuario.primerNombre}"></p>
+									<p th:text="'Primer Apellido: ' + ${ticket.usuario.primerApellido}"></p>
+									<p th:text="'Numero Documento: ' + ${ticket.usuario.numDocumento}"></p>
+								</div>
+								<p><strong>Número:</strong> [[ ${ticket.numero} ]]</p>
+								<p><strong>Nombre:</strong> [[ ${ticket.nombre} ]]</p>
+								<p><strong>Problema:</strong> [[ ${ticket.problema} ]]</p>
+								<p><strong>Estado:</strong> [[ ${ticket.estado} ]]</p>
+								<p><strong>Prioridad:</strong> [[ ${ticket.prioridad} ]]</p>
+								<hr /> <!-- Línea separadora entre tickets -->
+							<br>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<footer class="footer bg-dark text-light" id="footer">
+		<br>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h5>Enlaces</h5>
+					<ul class="list-unstyled">
+						<li><a href="/" class="text-decoration-none text-light">Inicio</a></li>
+						<li><a href="/about" class="text-decoration-none text-light" data-bs-toggle="modal"
+								data-bs-target="#miModalfooter">Servicios</a></li>
+						<li><a href="#footer" class="text-decoration-none text-light" data-bs-toggle="modal"
+								data-bs-target="#miModalfooter">Contacto</a></li>
+						<!-- Modal -->
+						<div class="modal fade" id="miModalfooter" tabindex="-1" aria-labelledby="miModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title text-success" id="miModalLabel">Información</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<p class="p-3 text-dark ">
+											Estamos trabajando en ello</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Cerrar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h5>Contacto</h5>
+					<ul class="list-unstyled">
+						<li><i class="fas fa-map-marker-alt"></i> Edificio B- 307B: Mar: de 6:00 am a 7:30 am</li>
+						<li><i class="fas fa-phone"></i> Teléfono: 123-456-789</li>
+						<li><i class="fas fa-envelope"></i> Correo electrónico: info@ejemplo.com</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="col-md-6 p-6">
+						<div class="d-flex p-6">
+							<img src="https://th.bing.com/th/id/OIP.8KCKKrekB8FD_Smp8PyidAHaEa?rs=1&pid=ImgDetMain"
+								alt="Imagen 1" class="img-thumbnail me-3" width="350">
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<p class="text-center">&copy; 2023 Dayana Garavito - María Pinzón. Todos los derechos reservados-></p>
+		</div>
+		<br>
+	</footer>
+
+
+</body>
+
+</html>
