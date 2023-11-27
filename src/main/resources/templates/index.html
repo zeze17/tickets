@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tickets</title>
+	<link rel="stylesheet" th:href="@{/css/styles.css}">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Courgette&family=Kalam:wght@300&family=Permanent+Marker&family=Shadows+Into+Light&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Shadows+Into+Light&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Courgette&family=Kalam:wght@300&family=Permanent+Marker&family=Shadows+Into+Light&display=swap"
+		rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<!-- jQuery, Popper.js, Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar">
+			<ul>
+				<li><a th:href="@{/usuarios/}">Usuarios</a></li>
+				<li><a th:href="@{/administradores/}">Administradores</a></li>
+				<li><a th:href="@{/tickets/}">Tickets</a></li>
+				<li><a th:href="@{/}">Cerrar Sesión</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section class="jugadores-destacados">
+
+		<div class="jumbotron mt-4 shadow">
+			<div id="carouselExample" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="https://www.uts.edu.co/sitio/wp-content/uploads/2019/10/banner-tec-informatica.jpg"
+							class="d-block w-100" alt="Imagen 1">
+					</div>
+					<div class="carousel-item">
+						<img src="http://historico.uts.edu.co/portal/app/ckfinder/userfiles/images/uts%20al%20dia-01.png"
+							class="d-block w-100" alt="Imagen 2">
+					</div>
+					<div class="carousel-item">
+						<img src="https://www.uts.edu.co/sitio/wp-content/uploads/2019/10/banner-mejor.jpg"
+							class="d-block w-100" alt="Imagen 3">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Siguiente</span>
+				</a>
+			</div>
+			
+<div class="cuerpo">
+			<hr class="m-4">
+			<p>La Sala de Informática de la UTS es un espacio equipado con modernas computadoras
+				y recursos tecnológicos destinados a facilitar el aprendizaje y desarrollo de habilidades
+				en el campo de la informática. Esta sala cuenta con una amplia variedad de software especializado
+				y acceso a Internet de alta velocidad, brindando a los estudiantes y profesores un entorno propicio
+				para realizar investigaciones, realizar proyectos y practicar programación. Además, el personal
+				especializado está disponible para brindar asistencia técnica y apoyo en el uso de las herramientas
+				y recursos disponibles. La Sala de Informática UTS es un lugar clave para el desarrollo de competencias
+				tecnológicas y promueve la formación integral de los estudiantes en el ámbito de la informática.</p>
+			<hr class="m-4">
+</div>
+			<!-- Sección de Servicios -->
+			<section class="container my-5">
+				<div class="row">
+					<div class="col-md-4 mb-4">
+						<div class="card">
+							<img src="https://www.uts.edu.co/sitio/wp-content/uploads/2020/09/banner-bienestar-1.jpg"
+								class="card-img-top" alt="Servicio 1" style="max-width: 90%; height: auto;">
+							<div class="card-body">
+								<h5 class="card-title">Política de Gratuidad</h5>
+								<p class="card-text">El Gobierno Nacional mediante el decreto 1667 del 7 de diciembre de
+									2021, reglamentó la implementación de la política de gratuidad en la matrícula para
+									mejorar el acceso a la educación superior en las Instituciones de Educación Superior
+									públicas en el nivel de pregrado de los jóvenes de las familias más vulnerables
+									socioeconómicamente, así como establecer sus requisitos, beneficios, fuentes de
+									financiación y la competencia para expedir reglamentos operativos y específicos,
+									entre otras disposiciones. </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4">
+						<div class="card">
+							<img src="https://scontent.fbga2-1.fna.fbcdn.net/v/t39.30808-6/326403590_716534113250387_573100629625019761_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEho--xEy8bnsxrBjRx38-7JUpKuURHhEYlSkq5REeERsxUokCfY6UYnLwxXG1d0qWNZOuseWbRlzT1jFdihaib&_nc_ohc=7_7KUrsuHykAX-ILIL-&_nc_ht=scontent.fbga2-1.fna&oh=00_AfA-fOgPsQnMEu9rLa6kS7IDLktBQhgqeZIqChlBLsfSkA&oe=654DF685"
+								class="card-img-top" alt="Servicio 2"
+								style="max-width: 70%; height: auto; margin: 0 auto;">
+							<div class="card-body">
+								<h5 class="card-title">Bienestar institucional</h5>
+								<p class="card-text">Bienestar institucional es la dependencia administrativa que
+									brinda, promueve y trabaja para el buen desarrollo de la actividad académica,
+									contribuyendo activamente en la formación integral de la comunidad uteísta a través
+									de la implementación de programas que orienten el desarrollo físico, psico-afectivo,
+									espiritual, potencial individual y colectivo del estudiante, profesores y personal
+									administrativo que propenden por el mejoramiento de su calidad de vida.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4">
+						<div class="card">
+							<img src="https://www.uts.edu.co/sitio/wp-content/uploads/2020/06/ed59b13d-60c0-4d2a-80de-6ef8f4de1044-1.jpg"
+								class="card-img-top" alt="Servicio 3" style="max-width: 120%; height: auto;">
+							<div class="card-body">
+								<h5 class="card-title">Soporte CASA</h5>
+								<p class="card-text"> Horario de Atención: días hábiles de lunes a viernes de 7:00 a. m.
+									a 8:00 p. m. en jornada continua
+								<p>Tipo de Atención: Encontrarás agentes que te ubicarán en la prestación de los
+									servicios institucionales y te ayudarán a resolver tus dudas</p>
+								<p>Medio de Atención: Chat.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+
+	</section>
+
+	<footer class="footer bg-dark text-light" id="footer">
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Enlaces</h5>
+        <ul class="list-unstyled">
+          <li><a href="/" class="text-decoration-none text-light" >Inicio</a></li>
+          <li><a href="/about" class="text-decoration-none text-light" data-bs-toggle="modal" data-bs-target="#miModalfooter">Servicios</a></li>
+          <li><a href="#footer" class="text-decoration-none text-light" data-bs-toggle="modal" data-bs-target="#miModalfooter">Contacto</a></li>
+            <!-- Modal -->
+            <div class="modal fade" id="miModalfooter" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-success" id="miModalLabel">Información</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="p-3 text-dark ">
+                        Estamos trabajando en ello</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+                </div>
+            </div>
+            </div>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contacto</h5>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-map-marker-alt"></i> Edificio B- 307B: Mar: de 6:00 am a 7:30 am</li>
+          <li><i class="fas fa-phone"></i> Teléfono: 123-456-789</li>
+          <li><i class="fas fa-envelope"></i> Correo electrónico: info@ejemplo.com</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <div class="col-md-6 p-6">
+        <div class="d-flex p-6">
+          <img src="https://th.bing.com/th/id/OIP.8KCKKrekB8FD_Smp8PyidAHaEa?rs=1&pid=ImgDetMain" alt="Imagen 1" class="img-thumbnail me-3" width="350">
+        </div>
+      </div>
+      </div>
+    </div>
+    <hr>
+    <p class="text-center">&copy; 2023 Dayana Garavito - María Pinzón. Todos los derechos reservados-></p>
+  </div>
+  <br>
+</footer>
+
+
+</body>
+
+</html>

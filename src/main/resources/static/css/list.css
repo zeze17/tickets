@@ -1,0 +1,212 @@
+
+.return-button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.return-button:hover {
+    background-color: #0056b3;
+}
+/* Estilos para los contenedores principales */
+/* Estilos para el contenedor principal */
+/* Estilos para el contenedor principal */
+.cont {
+    margin: 40px auto; /* Ajusta el margen para centrar horizontalmente */
+    padding: 10px;
+    border-radius: 8px;
+    width: 80%; /* Reduciendo el ancho al 60% */
+}
+
+/* Estilos para el contenedor interno */
+.cont_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra verticalmente el contenido */
+    text-align: center; /* Alinea el texto al centro si es necesario */
+}
+
+
+.body1 {
+    background-image: url('https://d1qhi81ido3be7.cloudfront.net/wp-content/uploads/2020/02/graphic-design-web-design-blog-size.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    margin: 0; 
+    padding: 0; 
+    height: 100%;
+}
+.body2 {
+    background-image: url('https://www.mediasource.mx/hubfs/blog-files/fondos-web.jpg#keepProtocol'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center; 
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+}
+.body3 {
+    background-image: url('https://th.bing.com/th/id/OIP.kzhsX6zZx-7UqwDJNs-WAwHaEo?w=1024&h=640&rs=1&pid=ImgDetMain'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    margin: 0; 
+    padding: 0;
+    height: 100%; 
+}
+.body4 {
+    background-image: url('https://www.valoraanalitik.com/wp-content/uploads/2019/05/Clubes-Europa.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center;
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+}
+.body5 {
+    background-image: url('https://th.bing.com/th/id/R.9623b272c65a082c01430066d936d36a?rik=%2b77eLkDeTmaRMQ&riu=http%3a%2f%2fveteranoscordobacf.es%2fwp-content%2fuploads%2f2015%2f11%2f56-ASOCIACIONES-ESCUDOS-logo-Asociacion.gif&ehk=iRPr0mEQfYaD13nb0FSWmUjIgPcJa12KrIJRbHXEJXY%3d&risl=&pid=ImgRaw&r=0'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+}
+.page-title {
+    text-align: center;
+    -webkit-text-stroke: 1px white;
+    font-size: 50px;
+    color: rgb(0, 128, 255); 
+    margin-top: 20px;
+}
+
+.title-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    border-radius: 20px; 
+    margin-top: 15px;
+    margin-left: 10px;
+    color: white; 
+}
+.custom-table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.custom-table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.custom-table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+/* Style for the header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.tab {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-container {
+    overflow-x: auto; 
+    max-width: 100%; 
+    margin: 0 auto; 
+    white-space: nowrap; 
+}
+
+.tab th, .tab td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+}
+
+.tab th {
+    background-color: #007bff;
+    color: white;
+    
+}
+
+.tab tr:nth-child(even) {
+    background-color: #f2f2f2;
+    
+}
+
+.text-warning, .text-danger {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.text-warning:hover, .text-danger:hover {
+    color: #0056b3;
+}
+
+.add-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+.add {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add:hover {
+    background-color: #0056b3;
+}
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}

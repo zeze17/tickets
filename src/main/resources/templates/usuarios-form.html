@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Ingreso Usuario</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" th:href="@{/css/form.css}">
+	<link rel="shortcut icon" th:href="@{/img/favicon.png}" type="image/x-icon">
+	<!-- Bootstrap CSS -->
+	<link rel="shortcut icon" th:href="@{/img/favicon.png}" type="image/x-icon">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" th:href="@{/css/styles.css}">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Courgette&family=Kalam:wght@300&family=Permanent+Marker&family=Shadows+Into+Light&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Shadows+Into+Light&display=swap"
+		rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css}"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<div class="body1">
+
+	<body>
+		<header>
+			<nav class="navbar">
+
+				<a th:href="@{/usuarios/}">Regresar</a>
+				<a th:href="@{/}">Cerrar Sesión</a>
+			</nav>
+		</header>
+		<main>
+			<br>
+			<div class="cont">
+				<h1 class="titulo">Ingresar Usuario</h1>
+				<form th:action="@{/usuarios/salvar}" th:object="${usuario}" method="post">
+					<input type="hidden" th:field="*{id}">
+					<div class="tipoDocumento">
+						<label for="tipoDocumento">Tipo Documento: </label>
+						<input type="text" class="form-control entrada" id="tipoDocumento" th:field="*{tipoDocumento}"
+							placeholder="tipoDocumento" required>
+					</div>
+					<div class="numDocumento">
+						<label for="numDocumento"> Documento: </label>
+						<input type="text" class="form-control entrada" id="numDocumento" th:field="*{numDocumento}"
+							placeholder="numDocumento" required>
+					</div>
+					<div class="primerApellido">
+						<label for="primerApellido">Primer Apellido: </label>
+						<input type="text" class="form-control entrada" id="primerApellido" th:field="*{primerApellido}"
+							placeholder="primerApellido" required>
+					</div>
+					<div class="segundoApellido">
+						<label for="segundoApellido">Segundo Apellido: </label>
+						<input type="text" class="form-control entrada" id="segundoApellido"
+							th:field="*{segundoApellido}" placeholder="segundoApellido" required>
+					</div>
+					<div class="primerNombre">
+						<label for="primerNombre">Primer Nombre: </label>
+						<input type="text" class="form-control entrada" id="primerNombre" th:field="*{primerNombre}"
+							placeholder="primerNombre" required>
+					</div>
+					<div class="segundoNombre">
+						<label for="segundoNombre">Segundo Nombre: </label>
+						<input type="text" class="form-control entrada" id="segundoNombre" th:field="*{segundoNombre}"
+							placeholder="segundoNombre" required>
+					</div>
+					<div class="correo">
+						<label for="correo">Correo: </label>
+						<input type="text" class="form-control entrada" id="correo" th:field="*{correo}"
+							placeholder="correo" required>
+					</div>
+					<div class="telefono">
+						<label for="telefono">Telefono: </label>
+						<input type="text" class="form-control entrada" id="telefono" th:field="*{telefono}"
+							placeholder="telefono" required>
+					</div>
+					<div class="contrasena">
+						<label for="contrasena">Contrasena: </label>
+						<input type="text" class="form-control entrada" id="contrasena" th:field="*{contrasena}"
+							placeholder="contrasena" required>
+					</div>
+					<div class="button">
+						<button type="submit">Agregar</button>
+					</div>
+				</form>
+			</div>
+		</main>
+
+		<footer class="footer bg-dark text-light" id="footer">
+			<br>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<h5>Enlaces</h5>
+						<ul class="list-unstyled">
+							<li><a href="/" class="text-decoration-none text-light">Inicio</a></li>
+							<li><a href="/about" class="text-decoration-none text-light" data-bs-toggle="modal"
+									data-bs-target="#miModalfooter">Servicios</a></li>
+							<li><a href="#footer" class="text-decoration-none text-light" data-bs-toggle="modal"
+									data-bs-target="#miModalfooter">Contacto</a></li>
+							<!-- Modal -->
+							<div class="modal fade" id="miModalfooter" tabindex="-1" aria-labelledby="miModalLabel"
+								aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title text-success" id="miModalLabel">Información</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal"
+												aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<p class="p-3 text-dark ">
+												Estamos trabajando en ello</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary"
+												data-bs-dismiss="modal">Cerrar</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h5>Contacto</h5>
+						<ul class="list-unstyled">
+							<li><i class="fas fa-map-marker-alt"></i> Edificio B- 307B: Mar: de 6:00 am a 7:30 am</li>
+							<li><i class="fas fa-phone"></i> Teléfono: 123-456-789</li>
+							<li><i class="fas fa-envelope"></i> Correo electrónico: info@ejemplo.com</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<div class="col-md-6 p-6">
+							<div class="d-flex p-6">
+								<img src="https://th.bing.com/th/id/OIP.8KCKKrekB8FD_Smp8PyidAHaEa?rs=1&pid=ImgDetMain"
+									alt="Imagen 1" class="img-thumbnail me-3" width="350">
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<p class="text-center">&copy; 2023 Dayana Garavito - María Pinzón. Todos los derechos reservados-></p>
+			</div>
+			<br>
+		</footer>
+	</body>
+
+</html>
